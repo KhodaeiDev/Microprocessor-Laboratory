@@ -1,0 +1,19 @@
+#include <mega16.h>
+#include <alcd.h>
+#include <delay.h>
+
+void main(void)
+{ 
+int i = 0;
+lcd_init (32);
+while(1)
+{
+for ( i=0 ; i<=16 ; i++)
+{
+lcd_clear();
+lcd_gotoxy(i,0);
+lcd_putsf("Mehran");
+delay_ms(200);
+}
+}
+}
